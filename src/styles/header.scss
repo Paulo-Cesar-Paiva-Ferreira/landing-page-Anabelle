@@ -1,0 +1,57 @@
+@use 'variaveis';
+
+
+
+.header {
+    padding: 2vw 5.6vw;
+    background-color:variaveis.$corSecundaria;
+    
+
+    &__container {
+        padding: 8px 36px;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 768px) {
+        display: block;
+
+            h1 {
+                font-size: 32px;
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1023px) {
+            display: block;
+    
+                h1 {
+                    font-size: 36px;
+                    text-align: center;
+                }
+            }
+        
+    }
+
+
+    &__links {
+        display: flex;
+        justify-content: center;
+        margin-right: 34px;
+        margin-top: 24px;
+
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
+    }
+}
+
+.button {
+    margin-left: 36px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.banner {
+    width: 100%;
+}
